@@ -1,0 +1,467 @@
+.footer {
+
+	@include flexbox();
+	flex-flow: wrap;
+	background: $black;
+	padding: 8rem 0 0 0;
+	z-index: 910;
+	position: relative;
+
+	&-copyrights {
+
+		@include flexbox();
+		background: $gray-1;
+		flex-flow: row-reverse;
+		height: 3rem;
+		width: 100%;
+		align-items: center;
+
+	}
+
+	&-content {
+
+		@include flexbox();
+		flex-flow: wrap;
+
+	}
+
+	input[type="submit"] {
+			
+			margin: 1rem 0;
+			width: 100%;
+
+		@include desktop-sm {
+
+			font-size: calc( .5rem + 1vw);
+			margin: 1rem 0 0 50%;
+			width: 50%;
+		
+		}
+
+		@include desktop-md {
+
+			font-size: calc( .5rem + 1vw);
+			margin: 1rem 0 0 50%;
+			width: 50%;
+		
+		}
+
+		@include desktop {
+
+			font-size: calc( .5rem + .5vw);
+			margin: 1rem 0 0 75%;	
+			width: 25%;
+			height: 3.5rem;
+		
+		}
+		
+	}
+
+	&-contato {
+		
+		width: 100%;
+		margin: 0;
+
+		@include tablet {
+
+			margin: 0 0 8rem 0;
+
+		}
+
+		@include desktop-sm {
+
+			width: 45%;
+			margin: 0 5% 0 0;	
+
+		}
+
+		@include desktop {
+
+			width: 45%;
+			margin: 0 5% 0 0;	
+		}
+		
+	}
+
+	&-social {
+
+		width: 100%;
+		margin: 0;
+
+		@include desktop-sm {
+
+			width: 45%;
+			margin: 0 0 0 5%;
+		}
+
+		@include desktop {
+
+			width: 45%;
+			margin: 0 0 0 5%;
+		}
+		
+	}
+
+	&-social-icons {
+
+		ul {
+
+			@include flexbox();
+			align-items: center;
+			justify-content: space-around;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+
+			@include tablet {
+
+				width: 50%;
+				margin: 0 0 0 50%;
+				padding: 0;
+				align-items: center;
+				justify-content: space-around;
+				list-style: none;
+
+			}
+
+			@include desktop-sm { 
+
+				width: 50%;
+				margin: 0 0 0 50%;
+				padding: 0;
+				align-items: center;
+				justify-content: space-around;
+				list-style: none;
+			}
+
+			@include desktop {
+
+				@include flexbox();
+				width: 50%;
+				margin: 0 0 0 50%;
+				padding: 0;
+				align-items: center;
+				justify-content: space-around;
+				list-style: none;
+
+			}
+
+		}
+	}
+
+	&-newsletter {
+
+		@include flexbox();
+		flex-flow: row;
+		flex-wrap: wrap;
+
+		@include tablet {
+
+			margin: 0 0 8rem 0;
+
+		}
+
+		@include desktop-sm {
+
+			@include flexbox();
+			flex-flow: row;
+			flex-wrap: wrap;
+			margin: 0 0 6.5rem 0;
+
+		}
+
+		@include desktop-md {
+
+			@include flexbox();
+			flex-flow: row;
+			flex-wrap: wrap;
+			margin: 0 0 5rem 0;
+
+		}
+
+		h2 {
+
+			width: 100%;
+
+		}
+
+		form {
+
+			@include flexbox();
+			flex-flow: row;
+			flex-wrap: wrap;
+			width: 100%;
+
+		}
+
+		
+
+		input[type="text"] {
+			
+			margin: 1rem 0;
+			width: 100%;
+
+			@include desktop-sm {
+				
+				margin: 1rem 4% 0 0;
+				width: 42%;
+				
+			}
+
+			@include desktop-md {
+			
+			margin: 1rem 4% 0 0;
+			width: 42%;
+				
+			}
+			
+
+			@include desktop {
+
+				margin: 1rem 4% 0 0;
+				width: 45%;
+				
+			}
+		}
+
+		input[type="email"] {
+				
+				margin: 1rem 0;
+				width: 100%;
+
+			@include desktop-sm {
+
+				margin: 1rem 0 0 0;	
+				width: 45%;
+			
+			}
+
+			@include desktop-md {
+
+				margin: 1rem 0 0 0;	
+				width: 47%;
+			
+			}
+
+			@include desktop {
+
+				margin: 1rem 0 0 0;	
+				width: 45%;
+			
+			}
+			
+		}
+
+	
+	}
+
+
+	&-address {
+
+		@include flexbox();
+		margin: 6rem 0 0 0;
+		width: 100%;
+		flex-flow: column;
+		
+
+		@include tablet {
+
+			flex-flow: row;
+		}
+
+		@include desktop-sm {
+
+			flex-flow: row;
+		}
+
+		@include desktop {
+
+			flex-flow: row;
+		}
+
+
+		&-street {
+
+			color: $white;
+			width: 100%;
+			margin: 0;
+
+			@include tablet {
+
+				color: $white;
+				width: 50%;
+				margin: 0 0 0 0;
+
+			}
+
+			@include desktop-sm {
+
+				color: $white;
+				width: 50%;
+				margin: 0 0 0 0;
+
+			}
+
+			@include desktop {
+
+				color: $white;
+				width: 50%;
+				margin: 0 10% 0 0;
+
+			}
+
+			p {
+
+				font-size: calc(1rem + .5vw);
+				font-family: $main-font;
+				line-height: 1.5rem;
+				text-align: center;
+				color: $white;
+
+				@include tablet {
+
+					font-size: calc(1rem + .5vw);
+					font-family: $main-font;
+					line-height: 1.5rem;
+					text-align: left;
+					color: $white;
+				}
+
+				@include desktop-sm {
+
+					font-size: calc(.5rem + .5vw);
+					font-family: $main-font;
+					line-height: 1.5rem;
+					text-align: left;
+					color: $white;
+				}
+
+				@include desktop {
+
+					font-size: calc(.5rem + .5vw);
+					font-family: $main-font;
+					line-height: 2rem;
+					text-align: left;
+					color: $white;
+				}
+			}
+
+		}
+
+
+		&-phone {
+	
+			width: 100%;
+			text-align: center;
+			flex-flow: column;
+			
+			@include tablet {
+
+				width: 45%;
+				text-align: right;
+				flex-flow: row;
+			}
+
+			@include desktop-sm {
+
+				width: 50%;
+				text-align: right;
+				flex-flow: row;
+			}
+
+
+			@include desktop {
+
+				width: 45%;
+				text-align: right;
+				flex-flow: row;
+			}
+
+			h4 {
+
+				color: $white;
+				font-size: calc(1rem + .5vw);
+				font-family: $main-font;
+				text-transform: uppercase;
+				text-align: center;
+
+				@include tablet {
+
+					color: $white;
+					font-size: calc(.5rem + .5vw);
+					font-family: $main-font;
+					text-transform: uppercase;
+					text-align: right;
+
+				}
+
+				@include desktop-sm {
+
+					color: $white;
+					font-size: calc(.5rem + .5vw);
+					font-family: $main-font;
+					text-transform: uppercase;
+					text-align: right;
+
+				}
+
+				@include desktop {
+
+					color: $white;
+					font-size: calc(.5rem + .5vw);
+					font-family: $main-font;
+					text-transform: uppercase;
+					text-align: right;
+
+				}
+			}
+
+			a {
+
+				color: $white;
+				font-size: calc(2rem + .5vw);
+				font-family: $main-font;
+				text-transform: uppercase;
+				text-align: center;
+
+				@include tablet {
+
+					color: $white;
+					font-size: calc(1rem + .5vw);
+					font-family: $main-font;
+					text-transform: uppercase;
+					text-align: right;
+
+				}
+
+				@include desktop-sm {
+
+					color: $white;
+					font-size: calc(1rem + .5vw);
+					font-family: $main-font;
+					text-transform: uppercase;
+					text-align: right;
+
+				}
+
+				@include desktop {
+
+					color: $white;
+					font-size: calc(1rem + .5vw);
+					font-family: $main-font;
+					text-transform: uppercase;
+					text-align: right;
+
+				}
+			}
+		}
+	}
+}
+
+.mosca {
+	
+	width: 4rem;
+	margin: 0 2rem 0 0;
+
+}

@@ -1,0 +1,49 @@
+.page {
+
+	padding: 10rem 0 4rem 0;
+	min-height: 100vh;
+	background: $white;
+	z-index: 910;
+	position: relative;
+	margin: 30vh 0 0 0;
+
+	&-content {
+
+		@include flexbox();
+		flex-flow: row;
+		flex-wrap: wrap;
+		width: 100%;
+
+	}
+
+	&-thumbnail {
+		
+		background-size: 100%;
+		background-position: center center;
+		min-height: 35vh;
+		position: fixed;
+		z-index: 900;
+		width: 100%;
+		top: 0;
+		@extend .blur-grayscale;
+
+	}
+
+	&-title {
+
+		@extend .title;
+		border-left: 2px solid $white;
+		border-bottom: 2px solid $white;
+		color: $white;
+		margin: -10vh 15% 0 15%;
+		text-shadow: 0 2px 0 #171717;
+		letter-spacing: 4px;
+		-webkit-filter: none;
+		filter: none;
+		float:left;
+		position: relative;
+		z-index: 910;
+		width: 70%;
+
+	}
+}

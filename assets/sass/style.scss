@@ -1,0 +1,62 @@
+/*!
+
+Theme Name: THEME NAME
+Theme URI: --
+Author: Marcelo Barbosa
+Author URI: https://github.com/marcelobarbosadg87
+Description: --
+Version: 1.0
+Tags: --
+Text Domain: --
+
+*/
+
+/*! Base CSS */
+
+	@import 'base/reset';
+	@import 'base/colors';
+	@import 'base/fonts';
+	@import 'base/variables';
+	@import 'base/mixins';
+	@import 'base/helpers';
+	@import 'base/main';
+
+
+/*! Components CSS */
+
+	@import 'components/buttons';
+	@import 'components/menus';
+	@import 'components/inputs';
+	@import 'components/images';
+	@import 'components/text';
+	@import 'components/carousel';
+	@import 'components/_wpcf7';
+	
+/*! WordPress Templates Hiearchy  CSS */
+	
+	@import 'templates/error404';
+	@import 'templates/archive';
+	@import 'templates/audio';
+	@import 'templates/author';
+	@import 'templates/category';
+	@import 'templates/comments';
+	@import 'templates/content';
+	@import 'templates/content-none';
+	@import 'templates/content-page';
+	@import 'templates/footer';
+	@import 'templates/header';	
+	@import 'templates/home';	
+	@import 'templates/image';
+	@import 'templates/search';
+	@import 'templates/searchform';
+	@import 'templates/sidebar';
+	@import 'templates/single';
+	@import 'templates/page';
+	@import 'templates/tag';
+	@import 'templates/video';
+
+	
+	
+
+/*! Customize Plugins CSS */
+

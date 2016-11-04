@@ -1,0 +1,61 @@
+.sidebar {
+
+display: none;
+
+@include desktop-sm {
+
+	width: 25%;
+	@include flexbox();
+	flex-flow: column;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	border-right: 2px solid $orange-1;
+	border-bottom: 2px solid $orange-1;
+
+}
+	&-content {
+
+		width: 100%;
+		@include flexbox();
+		flex-flow: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid $orange-1;
+
+	}
+
+	&-thumbnail {
+
+		width: 20%;
+
+	}
+
+	a {
+
+		color: $gray-1;
+		@extend .transition;
+
+		&:hover {
+
+			color: $orange-1;
+			@extend .transition;
+		}
+	}
+
+	&-title {
+
+		width: 70%;
+		font-family: $main-font;
+		font-size: calc(.75rem + .25vw + .25vh);
+
+	}
+
+	.btn-default {
+
+		width: 50%;
+		margin: 0 0 0 45%;
+		box-sizing: border-box;
+		
+	}
+}

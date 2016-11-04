@@ -1,0 +1,311 @@
+.menu {
+
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+
+	@include desktop-sm {
+
+		width: 75%;
+		margin: 0 0 0 15%;
+
+	}
+
+	@include desktop {
+
+		width: 75%;
+		margin: 0 0 0 15%;
+
+	}
+
+	&-social-icons {
+
+		@include flexbox();
+		align-items: center;
+		box-sizing: border-box;			
+		flex-flow: row;
+		justify-content: space-around;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 10%;
+
+		li {
+
+			text-align: center;
+			padding: calc(.25rem + 1vw);
+
+			img {
+
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	// Control the desktop  menu
+	&-mobile {
+
+		@include flexbox();
+		flex-flow: row-reverse;
+		flex-wrap: wrap;
+		background: $orange-1;
+		height: 5.375rem;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 999;
+
+		@include desktop-sm {
+
+			display: none;
+
+		}
+
+	}
+
+	// Control the desktop  menu
+	&-desktop {
+		
+		flex-flow: row;
+		flex-wrap: wrap;
+		background: $orange-1;
+		display: none;
+		height: 5.375rem;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 999;
+
+		@include desktop-sm {
+	
+			@include flexbox();
+
+		}
+
+		&-logo {
+			
+			display: none;
+			@extend .transition;
+
+			@include desktop-sm {
+
+				height: auto;
+				display: block;
+				margin: 0 2% 0 0;
+				position: absolute;
+				width: 12.5%;
+				top: 0;
+				left: 5%;
+
+				-webkit-transition: all .5s ease-in-out;
+				-moz-transition: all .5s ease-in-out;
+				-ms-transition: all .5s ease-in-out;
+				-o-transition: all .5s ease-in-out;
+				transition: all .5s ease-in-out;
+
+			}
+
+			@include desktop-md {
+				
+				height: auto;
+				display: block;
+				margin: 0 2% 0 0;
+				position: absolute;
+				width: 8%;
+				top: 0;
+				left: 5%;
+
+				-webkit-transition: all .5s ease-in-out;
+				-moz-transition: all .5s ease-in-out;
+				-ms-transition: all .5s ease-in-out;
+				-o-transition: all .5s ease-in-out;
+				transition: all .5s ease-in-out;
+
+
+			}
+
+			@include notebook-hd {
+				
+				height: auto;
+				display: block;
+				margin: 0 2% 0 0;
+				position: absolute;
+				width: 8%;
+				top: 0;
+				left: 5%;
+
+				-webkit-transition: all .5s ease-in-out;
+				-moz-transition: all .5s ease-in-out;
+				-ms-transition: all .5s ease-in-out;
+				-o-transition: all .5s ease-in-out;
+				transition: all .5s ease-in-out;
+
+
+			}
+
+			@include desktop {
+				
+				height: auto;
+				display: block;
+				margin: 0 2% 0 0;
+				position: absolute;
+				width: 8%;
+				top: 0;
+				left: 15%;
+
+				-webkit-transition: all .5s ease-in-out;
+				-moz-transition: all .5s ease-in-out;
+				-ms-transition: all .5s ease-in-out;
+				-o-transition: all .5s ease-in-out;
+				transition: all .5s ease-in-out;
+
+
+			}
+
+
+		}
+
+		&-logo-small {
+
+
+
+			@include desktop-sm {
+
+				width: 7.3%;
+				-webkit-transition: all .5s ease-in-out;
+				-moz-transition: all .5s ease-in-out;
+				-ms-transition: all .5s ease-in-out;
+				-o-transition: all .5s ease-in-out;
+				transition: all .5s ease-in-out;
+
+			}
+			@include notebook-hd {
+
+				width: 5.64%;
+				-webkit-transition: all .5s ease-in-out;
+				-moz-transition: all .5s ease-in-out;
+				-ms-transition: all .5s ease-in-out;
+				-o-transition: all .5s ease-in-out;
+				transition: all .5s ease-in-out;
+
+			}
+
+			@include desktop-md {
+
+				width: 5.85%;
+				-webkit-transition: all .5s ease-in-out;
+				-moz-transition: all .5s ease-in-out;
+				-ms-transition: all .5s ease-in-out;
+				-o-transition: all .5s ease-in-out;
+				transition: all .5s ease-in-out;
+			}
+
+
+
+			@include desktop {
+
+				width: 3.95%;
+				-webkit-transition: all .5s ease-in-out;
+				-moz-transition: all .5s ease-in-out;
+				-ms-transition: all .5s ease-in-out;
+				-o-transition: all .5s ease-in-out;
+				transition: all .5s ease-in-out;
+			}
+			
+		}
+	}
+
+	// Control the mobile menu
+		&-ul-opened {
+
+			height: 100vh;
+			padding: calc(1rem + 1vh) 0;
+
+		}
+
+		&-ul-closed {
+
+			height: 0;
+		}
+
+
+	// Control Generical menu list
+	ul {
+
+		@include flexbox();
+		flex-flow: column;
+		background: $orange-2;
+		margin: 0;
+		overflow: hidden;
+		position: absolute;
+		width: 100%;
+		z-index: 999;
+
+		@include desktop-sm {
+
+			align-items: center;
+			background: transparent;
+			flex-flow: row;
+			height: 70px;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+
+		}
+
+
+		li {
+			
+			border-left: 2px solid $orange-1;
+			border-bottom: 2px solid $orange-1;
+			box-sizing: border-box;
+			list-style: none;
+			margin: calc(.25rem + .25vh) 5%;
+			padding: calc(.25rem + .5vh) calc(1rem + 1vw);
+			width: 90%;
+
+			@include desktop-sm {
+
+				border: none;
+				margin: 0;
+				padding:0;
+				font-size: calc(.5rem + .5vw);
+				text-align: center;
+				padding: calc(.25rem + .5vh) 0; 
+
+			}
+
+			@include desktop-md {
+
+				border: none;
+				margin: 0;
+				padding:0;
+				font-size: calc(.5rem + .5vw);
+				text-align: center;
+				padding: calc(.25rem + .5vh) 0; 
+
+			}
+
+			@include desktop {
+
+				border: none;
+				margin: 0;
+				padding:0;
+				font-size: calc(.25rem + .5vw);
+				text-align: center;
+				padding: calc(.25rem + .5vh) 0; 
+
+			}
+
+			a {
+
+				color: $white;
+				font-family: $main-font;
+				text-decoration: none;
+				
+			}
+		}
+
+	}
+}

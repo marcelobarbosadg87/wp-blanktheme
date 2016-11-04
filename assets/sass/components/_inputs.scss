@@ -1,0 +1,55 @@
+input {
+
+	background: $gray-4;
+	border: 2px solid $gray-3;
+	color: $gray-2;
+	height: 1rem;
+	margin: 0;
+	padding: .5rem;
+	width: 100%;
+
+}
+
+textarea {
+
+	background: $gray-4;
+	border: 2px solid $gray-3;
+	margin:  0;
+	padding: .5rem;
+	width: 100%;
+
+}
+
+
+input[type="submit"] {
+
+	font-family: $main-font;
+	font-weight: 700;
+	display: table;
+	height: auto;
+	margin: calc(.25rem + .5vw) 0;
+	padding: calc(.25rem + .25vh);
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+
+}
+
+form {
+
+	@include flexbox();
+	flex-flow: wrap;
+	
+	input[type="submit"] {
+
+		width: 100%;
+		margin: 1rem 0%;
+		
+		@include desktop {
+
+			width: 25%;
+			margin: 1rem 0 1rem 75%;
+			
+		}
+	}
+}

@@ -1,0 +1,219 @@
+
+.title {
+	
+	font-size: calc(1rem + .5vw + .5vh);
+	font-family: $main-font;
+	font-weight: 700;
+	height: calc(1.7rem + 1vh);
+	padding: calc(.5rem + .5vw) calc(1rem + 1vh);
+	text-transform: uppercase;
+	width: 100%;
+	box-sizing: border-box;
+	display: table;
+
+	@include desktop-md {
+
+		font-size: calc(.5rem + .5vw + .5vh);
+
+	}
+
+	@include notebook-hd {
+
+		font-size: calc(.5rem + .5vw + .5vh);
+
+	}
+
+	@include desktop {
+
+		font-size: calc(.75rem + .5vw + .5vh);
+
+	}
+	
+	&-orange {
+
+		border-left: 2px solid $orange-1;
+		border-bottom: 2px solid $orange-1;
+		color: $orange-1;
+		@extend .title;
+
+	}
+
+	&-black {
+
+		border-left: 2px solid $orange-1;
+		border-bottom: 2px solid $orange-1;
+		color: $black;
+		@extend .title;
+
+	}
+
+	&-orange-inverse {
+
+		border-left: 2px solid $orange-1;
+		border-bottom: 2px solid $orange-1;
+		color: $gray-1;
+		@extend .title;
+
+	}
+
+	&-gray {
+
+		border-left: 2px solid $gray-2;
+		border-bottom: 2px solid $gray-2;
+		color: $gray-2;
+		@extend .title;
+
+	}
+
+	&-white {
+
+		border-left: 2px solid $orange-1;
+		border-bottom: 2px solid $orange-1;
+		color: $white;
+		@extend .title;
+
+	}
+
+	&-full-white {
+
+		border-left: 2px solid $white;
+		border-bottom: 2px solid $white;
+		color: $white;
+		@extend .title;
+
+	}
+
+	&-inverse {
+
+		border-left: 2px solid $gray-1;
+		border-bottom: 2px solid $gray-1;
+		color: $orange-1;
+		@extend .title;
+		
+	}
+	
+}
+
+.subtitle {
+
+	border-left: 2px solid $gray-3;
+	border-bottom: 2px solid $gray-3;
+	color: $gray-1;
+	font-size: calc(.75rem + .5vw + .5vh);
+	font-family: $main-font;
+	font-weight: 700;
+	line-height: 2rem;
+	padding: calc(.25rem + .25vw) calc(.5rem + .5vh);
+	display: table;
+	width: 100%;
+	box-sizing: border-box;
+
+	@include desktop-md {
+
+		font-size: calc(.5rem + .5vw + .5vh);
+
+	}
+
+	@include notebook-hd {
+
+		font-size: calc(.5rem + .5vw + .5vh);
+
+	}
+
+	@include desktop {
+
+		font-size: calc(.75rem + .5vw + .5vh);
+
+	}
+	
+	&-orange {
+
+		border-left: 2px solid $gray-3;
+		border-bottom: 2px solid $gray-3;
+		color: $orange-1;
+		@extend .subtitle;
+
+	}
+
+	&-white {
+
+		border-left: 2px solid $gray-3;
+		border-bottom: 2px solid $gray-3;
+		color: $white;
+		@extend .subtitle;
+
+	}
+
+	&-gray {
+
+		border-left: 2px solid $gray-2;
+		border-bottom: 2px solid $gray-2;
+		color: $gray-2;
+		@extend .subtitle;
+
+	}
+
+	&-inverse {
+
+		border-left: 2px solid $orange-1;
+		border-bottom: 2px solid $orange-1;
+		color: $orange-1;
+		@extend .subtitle;
+
+	}
+	
+}
+
+p {
+
+	color: $gray-1;
+	padding: 0;
+	font-size: calc( .7rem + .25vh + .25vw);
+	font-family: $main-font;
+	font-weight: 400;
+
+}
+
+.text {
+
+	color: $gray-1;
+	padding: 0;
+	font-size: calc( .7rem + .25vh + .25vw);
+	font-family: $main-font;
+	font-weight: 400;
+
+	&-orange {
+
+		color: $orange-1;
+		font-size: calc( .7rem + .25vh + .25vw);
+		font-family: $main-font;
+		font-weight: 400;
+	}
+
+	&-white {
+
+		color: $white;
+		font-size: calc( .7rem + .25vh + .25vw);
+		font-family: $main-font;
+		font-weight: 400;
+
+	}
+
+	&-black {
+		
+		color: $black;
+		font-size: calc( .7rem + .25vh + .25vw);
+		font-family: $main-font;
+		font-weight: 400;
+	}
+
+}
+
+.blockquote {
+
+	background: $gray-4;
+	color: $gray-1;
+	padding: 2rem;
+	border: 1px solid $gray-2;
+
+}

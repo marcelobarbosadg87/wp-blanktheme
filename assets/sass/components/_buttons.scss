@@ -1,0 +1,100 @@
+button:focus {
+
+	outline:0;
+}
+
+a:focus {
+
+	outline: 0;
+}
+
+
+.btn {
+	
+	&-default {
+	
+		font-family: $main-font;
+		font-weight: 700;
+		font-size: calc( 1rem + 1vw);
+		display: table;
+		margin: calc(.25rem + .5vw) 0;
+		padding: calc(.25rem + .25vh);
+		text-decoration: none;
+		text-align: center;
+		width: 100%;
+		@extend .transition;
+
+		@include desktop-sm {
+
+			font-size: calc(.75rem + .25vw + .25vh);
+			padding: calc(.25rem + .25vh);
+			
+		}
+
+
+		@include desktop {
+
+			font-size: calc(.5rem + .25vw + .25vh);
+			padding: calc(.25rem + .25vh);
+			
+		}
+	
+	}
+
+	
+	&-orange {
+
+		background: $orange-1;
+		border: none;
+		border-bottom: 5px solid $gray-1;
+		color: $white;
+		@extend .transition;
+
+		&:hover {
+
+			background: $gray-1;
+			border: none;
+			border-bottom: 5px solid $orange-1;
+			color: $white;
+			@extend .transition;
+
+		}
+
+	}
+
+	&-gray {
+
+		background: $gray-2;
+		border: none;
+		border-bottom: 5px solid $gray-1;
+		color: $white;
+		@extend .transition;
+	
+	}
+
+
+	&-mobile {
+		
+		width: 32px;
+		height: 32px;
+		border: none;
+		background: url(assets/images/hamburguer-menu.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		padding: 0;
+		margin: calc(1rem + 1vw);
+		
+
+		&-closed {
+
+			background-position: 0 0;
+		}
+
+		&-opened {
+
+			background-position: 0 -32px;
+		}
+	}
+
+}
+

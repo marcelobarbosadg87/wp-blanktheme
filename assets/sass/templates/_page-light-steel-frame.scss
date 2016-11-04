@@ -1,0 +1,229 @@
+.page {
+
+	&-lsf {
+
+
+		&-intro {
+
+			@include flexbox();
+			background: url('assets/images/backgrounds/bg-pg-lightsteelframe.jpg');
+			background-attachment: fixed;
+			background-size: 100%;
+			background-position: center center;
+			background-repeat: no-repeat;
+			height: 100vh;
+			width: 100%;
+			align-items: center;
+			@extend .grayscale;
+
+			&-title {
+
+				color: $white;
+				font-size: calc(8rem + 1vh);
+				font-family: $main-font;
+				font-weight: bolder;
+				letter-spacing: calc(1px + 0.3vw);
+				margin: 0 0 5rem 0;
+				text-align: center;
+				text-shadow: 0 2px 0 $black;
+
+			}	
+
+			&-subtitle {
+				
+				color: $white;
+				font-size: calc(4rem + 1vh);
+				font-family: $main-font;
+				font-weight: 400;
+				letter-spacing: calc(1px + 0.3vw);
+				text-align: center;
+				text-shadow: 0 2px 0 $black;
+
+			}
+
+			&-description {
+
+				width: 55%;
+				margin: 0 22.5%;
+				color: $white;
+			}
+		}
+
+		
+
+		&-house {
+
+			@include flexbox();
+			background: url('assets/images/backgrounds/house.jpg');
+			background-attachment: fixed;
+			background-size: 100%;
+			background-position: center center;
+			background-repeat: no-repeat;
+			height: 100vh;
+			padding: 0 0 10vh 0;
+			width: 100%;
+			align-items: flex-end;
+
+			&-title {
+
+				color: $white;
+				font-size: calc(8rem + 1vh);
+				font-family: $main-font;
+				font-weight: bolder;
+				letter-spacing: calc(1px + 0.3vw);
+				margin: 0 0 5rem 0;
+				text-align: center;
+				text-shadow: 0 2px 0 $black;
+
+			}	
+
+			&-subtitle {
+				
+				color: $white;
+				font-size: calc(4rem + 1vh);
+				font-family: $main-font;
+				font-weight: 400;
+				letter-spacing: calc(1px + 0.3vw);
+				text-align: center;
+				text-shadow: 0 2px 0 $black;
+
+			}
+
+			&-description {
+
+				width: 65%;
+				margin: 0 17.5%;
+				color: $white;
+			}
+		}
+
+		&-processo {
+
+			@include flexbox();
+			background: url('assets/images/backgrounds/processo.jpg');
+			background-attachment: fixed;
+			background-size: 100%;
+			background-position: center center;
+			background-repeat: no-repeat;
+			height: 100vh;
+			padding: 0 0 20vh 0;
+			width: 100%;
+			align-items: flex-end;
+
+			&-title {
+
+				color: $white;
+				font-size: calc(8rem + 1vh);
+				font-family: $main-font;
+				font-weight: bolder;
+				letter-spacing: calc(1px + 0.3vw);
+				margin: 0 0 5rem 0;
+				text-align: center;
+				text-shadow: 0 2px 0 $black;
+
+			}	
+
+			&-subtitle {
+				
+				color: $white;
+				font-size: calc(4rem + 1vh);
+				font-family: $main-font;
+				font-weight: 400;
+				letter-spacing: calc(1px + 0.3vw);
+				text-align: center;
+				text-shadow: 0 2px 0 $black;
+				margin: 0 0 8rem 0;
+
+			}
+
+			&-description {
+
+				width: 65%;
+				margin: 0 17.5%;
+				color: $white;
+			}
+
+			ul {
+
+				@include flexbox();
+				flex-flow: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				list-style: none;
+				width: 100%;
+				padding: 2rem;
+				border-left: 2px solid $white;
+				border-bottom: 2px solid $white;
+
+				li {
+
+					box-sizing: border-box;
+					text-align: left;
+					width: calc(80%/4);
+
+				}
+
+			}
+		}
+
+		&-projetos {
+
+			padding: 4rem 0;
+			min-height: 100vh;
+			background: $white;
+
+			&-list {
+				
+
+				ul {
+
+					@include flexbox();
+					flex-flow: row;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					list-style: none;
+					margin: 0;
+					padding:0;
+
+					li {
+
+						@include flexbox();
+						flex-flow: row;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						margin: 2rem 0;
+						width: calc(90% / 4); 
+
+					}
+				}
+
+
+				&-thumb {
+
+					width:100%;
+
+					img {
+
+						width: 100%;
+						height: auto;
+
+					}
+				}
+
+
+			}
+
+			&-excerpt {
+
+				width: 100%; 
+			}
+
+			.btn-orange {
+
+				width: 30%;
+				margin: 0 auto;
+
+			}
+		}
+	}
+}

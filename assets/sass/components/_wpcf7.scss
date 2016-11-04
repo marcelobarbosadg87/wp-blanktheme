@@ -1,0 +1,86 @@
+.wpcf7 {
+
+	p {
+
+		width: 100%;
+		color: $white;
+		margin: calc(0.5rem + .25vh) 0;
+
+	}
+
+	input {
+
+		background: $gray-4;
+		box-sizing: border-box;
+		border: 2px solid $gray-3;
+		color: $gray-2;
+		height: 3rem;
+		margin: 0;
+		padding: calc(1rem + .25vh) calc(1rem + .25vh) !important;
+		width: 100%;
+
+	}
+
+	textarea {
+
+		background: $gray-4;
+		border: 2px solid $gray-3;
+		box-sizing: border-box;
+		margin: 0.25rem 0;
+		padding: calc(1rem + .25vh) calc(1rem + .25vh) !important;
+		padding: .5rem;
+		width: 100%;
+	}
+
+
+	input[type="submit"] {
+
+
+		padding: calc(.25rem + .25vh);
+		display: table;
+		width: 25%;
+		margin: 1rem 0 1rem 75%;
+		padding: calc(1rem + .25vh) calc(1rem + .25vh) !important;
+		@extend .btn-default;
+		@extend .btn-orange;
+
+	}
+}
+
+.wpcf7-not-valid-tip {
+
+	color: $orange-3 !important;
+
+}
+
+.wpcf7-validation-errors {
+
+	@include flexbox();
+	align-items: center;
+	background: $orange-1;
+	border: none !important;
+	height: 4rem;
+	text-align: center !important;
+	font-family: $main-font;
+	color: $white;
+	width: 100%;
+	padding: calc(1rem + .25vh) calc(4rem + .25vh) !important;
+	margin: 0 !important;
+
+}
+
+.wpcf7-mail-sent-ok {
+
+	@include flexbox();
+	align-items: center;
+	background: $success;
+	border: none !important;
+	height: 4rem;
+	text-align: center !important;
+	font-family: $main-font;
+	color: $white;
+	width: 100%;
+	padding: calc(1rem + .25vh) calc(4rem + .25vh) !important;
+	margin: 0 !important;
+	
+}

@@ -1,0 +1,79 @@
+@mixin flexbox() {
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+}
+
+@mixin inline-flexbox() {
+
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flexflex;
+  display: inline-flex;
+
+}
+
+@mixin box-color($textcolor, $bgcolor) {
+
+    color: $textcolor;
+    background: $bgcolor;
+    
+}
+
+
+@mixin tablet {
+
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop-sm - 1px}) {
+
+    @content;
+
+  }
+
+}
+
+
+
+@mixin desktop-sm {
+
+  @media (min-width: #{$desktop-sm}) {
+
+    @content;
+
+  }
+
+}
+
+@mixin desktop-md {
+
+  @media (min-width: #{$desktop-md}) {
+
+    @content;
+
+  }
+
+}
+
+@mixin notebook-hd {
+
+  @media (min-width: #{$notebook-hd}) {
+
+    @content;
+
+  }
+
+}
+
+@mixin desktop {
+
+  @media (min-width: #{$desktop-lg}) {
+
+    @content;
+
+  }
+  
+}

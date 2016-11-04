@@ -1,0 +1,193 @@
+.page {
+
+	&-empreendimentos {
+
+		&-icon {
+
+			text-align: center;
+			border-bottom: 2px solid $gray-4;
+			padding: 0 0 1rem 0;
+
+		}
+
+		&-list {
+
+			@include flexbox();
+			flex-flow: row;
+			flex-wrap: wrap;
+			width: 100%;
+
+			ul {
+
+				@include flexbox();
+				flex-flow: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				li {
+
+					width: 100%;
+					margin: 0 0 3rem 0;
+
+					.title {
+
+						margin: 0;
+						padding: 1rem 0;
+						text-align: center;
+
+					}
+
+					&:last-child {
+
+						border: none;
+
+					}
+
+					@include desktop {
+
+						width: calc(85% / 3);
+						border-right: 2px solid $gray-4;
+						padding: 0 2rem;
+
+					}
+
+					ul {
+
+						li {
+
+							border: none;
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.empreendimentos {
+
+	&-list {
+
+		
+
+		&-thumbnail {
+			
+			@include flexbox();
+			flex-flow: column;
+			width: 100%;
+			box-sizing: border-box;
+			width: 100%;
+
+			img {
+
+				width: 100%;
+				height: auto;
+				position: relative;
+				z-index: 900;
+
+			}
+		}
+
+		&-title {
+
+			font-size: calc(.75rem + .5vw + .5vh);
+			line-height: 2rem;
+			font-family: $main-font;
+			min-height: 3rem;
+			margin: 3rem 0 1rem 0 !important;
+
+			@include desktop-sm {
+
+				font-size: calc(0.5rem + 1vw);
+				line-height: 2rem;
+				font-family: $main-font;
+				min-height: 5rem;
+				margin: 2rem 0 0 0 !important;
+			}
+
+		}
+
+		&-desc {
+
+			width: 100%;
+
+			p {
+
+				font-size: calc( .7rem + .25vh + .25vw);	
+				
+
+				@include desktop-sm {
+
+					font-size: calc(0.25rem + .5vw);
+
+				}
+			}
+
+			.btn-default {
+
+				width: 100%;
+				margin: 2rem 0;
+
+				@include desktop-sm {
+
+					width: 25%;
+					margin: 0 0 0 75%;
+
+				}
+			}
+			
+		}
+
+		ul {
+			
+			@include flexbox();
+			margin: 0;
+			padding: 0;
+			width: 100%;
+
+			li {
+
+				@include flexbox();
+				width: 100%;
+				margin: 6rem 0;
+				padding:0;
+				height: 80vh;
+				flex-flow: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				border-bottom: 2px solid $orange-4;
+
+				@include desktop-sm {
+
+					margin: 3rem 0;
+
+				}
+			}
+		}
+
+		.btn-default {
+
+			width: 50%;
+			margin: 1rem  0 0 50%;
+			box-sizing: border-box;
+
+		}
+	}
+
+	&-badge {
+
+		
+		position: absolute;
+		width: auto !important;
+		height: 5rem !important;
+		margin: -6rem 0 0 56%;
+		box-sizing: border-box;
+		vertical-align: bottom;
+		z-index: 910 !important;
+		
+	}
+}

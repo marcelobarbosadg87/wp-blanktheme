@@ -1,0 +1,70 @@
+.container {
+
+	width: 85%;
+	margin: 0 7.5%;
+
+	@include desktop-sm {
+
+		width: 90%;
+		margin: 0 5%;
+
+	}
+
+	@include desktop {
+		
+		width: 70%;
+		margin: 0 15%;
+
+	}
+}
+
+.menu-container {
+
+	width: 70%;
+	margin: 0 15%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: row;
+
+	@include desktop-sm {
+
+		width: 90%;
+		margin: 0 5%;
+
+	}
+
+	@include desktop {
+
+			width: 70%;
+			margin: 0 15%;
+			display: flex;
+			flex-wrap: wrap;
+			flex-flow: row;
+
+	}
+}
+
+figure {
+
+	margin: 0;
+	padding: 0;
+
+}
+
+a {
+
+	&:hover {
+
+		text-decoration: none;
+		color: $gray-1;
+		
+	}
+}
+
+p { 
+	
+	font-family: $main-font;
+	font-weight: 400;
+	line-height: 2rem;
+
+}
